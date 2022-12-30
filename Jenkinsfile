@@ -11,5 +11,10 @@ pipeline {
                 echo "hey code is done"
             }
         }
+        stage ("code11") {
+            steps {
+                echo "hey code is done"
+            }
+        }
     }
 }
