@@ -6,14 +6,19 @@ pipeline {
                 echo "hey code is done"
             }
         }
-        stage ("code1") {
+        stage ("Build") {
             steps {
-                echo "hey code is done"
+                echo "hey Build is done"
             }
         }
-        stage ("code11") {
+        stage ("deploy_to_test") {
             steps {
-                echo "hey code is done"
+                echo "hey Deployment is done on TEST env"
+            }
+        }
+        stage ("deploy_to_prod") {
+            steps {
+                echo "hey Deployment is done on PROD env"
             }
         }
     }
